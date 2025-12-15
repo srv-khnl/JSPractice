@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Student Results</title>
+</head>
+<body>
+   <form>
+  <label for="fullname">Full Name:</label><br>
+  <input type="text" id="fullname" name="fullname" placeholder="Full Name"><br><br>
+
+  <label for="english">English Marks:</label><br>
+  <input type="number" id="english" name="english" min="0" max="100" placeholder="0-100"><br><br>
+
+  <label for="maths">Maths Marks:</label><br>
+  <input type="number" id="maths" name="maths" min="0" max="100" placeholder="0-100"><br><br>
+
+  <label for="science">Science Marks:</label><br>
+  <input type="number" id="science" name="science" min="0" max="100" placeholder="0-100"><br><br>
+
+  <label for="computer">Computer Marks:</label><br>
+  <input type="number" id="computer" name="computer" min="0" max="100" placeholder="0-100"><br><br>
+
+  <label for="social">Social Marks:</label><br>
+  <input type="number" id="social" name="social"min="0" max="100" placeholder="0-100"><br><br>
+
+
+<button type="button" onclick="addStudent()">Add Student</button>
+</form>
+ <h2>Student Results:</h2>
+
+ <table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Total</th>
+      <th>Average</th>
+      <th>Grade</th>
+    </tr>
+  </thead>
+  <tbody id="output"></tbody>
+</table>
+
+<p id="results"></p>
+
+</body>
+</html>
