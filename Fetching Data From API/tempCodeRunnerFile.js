@@ -1,0 +1,2 @@
+getAllProduct()
+// getSingleProduct()
